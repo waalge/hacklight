@@ -1,5 +1,5 @@
 # hacklight
-Control brightness on xubuntu when using i3wm and where `xbacklight` fails
+Control brightness on xubuntu when using `i3wm` and where `xbacklight` fails
 
 ## Problem
 
@@ -21,10 +21,13 @@ The script `hacklight` just edits this file.
 sudo chown ME brightness
 ```
 where `ME` is you. Obvs.
+
 2. Edit `hacklight` to change the value of the variable `brightness_file` 
 to the appropriate path.
+
 3. Put `hacklight` in a path you OS will find it.
 (See [here](https://gist.github.com/nex3/c395b2f8fd4b02068be37c961301caa7))
+
 4. Add the contents of `i3config` to your `i3` config file (likely found at `.config/i3/config`). 
 
 
