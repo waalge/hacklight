@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# Hack to fix brightness. 
+# CHANGE THE FILE OWNER OF brightness_file TO YOU!
+# THEN IT CAN BE EDITED WITHOUT PRIVILEGE
+
+# Find brightness file: 
+brightness_file="/sys/class/backlight/intel_backlight/brightness"
+# For testing use local file  
+# brightness_file="./brightness"
+
+# Read current value
+value=$(cat $brightness_file) 
+echo "$value"
+
+# Argument gives change in value 
+newvalue=$(($value+$*))
+echo "New Value " $newvalue
+
+# Write to file 
+echo $newvalue > $brightness_file
