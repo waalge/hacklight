@@ -1,0 +1,5 @@
+# Add the following to sudoers (see README)
+username ALL = NOPASSWD: /path/to/hacklight
+# where 'username' and 'path/to/' are changed appropriately
+# e.g 
+# waalge ALL = NOPASSWD: /usr/sbin/hacklight

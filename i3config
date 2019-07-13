@@ -1,5 +1,5 @@
 # # while xbacklight is broke 
-bindsym XF86MonBrightnessUp exec hacklight 100 # increase screen brightness
-bindsym Shift+XF86MonBrightnessUp exec hacklight 17  # increase screen brightness
-bindsym XF86MonBrightnessDown exec hacklight -100 # decrease screen brightness
-bindsym Shift+XF86MonBrightnessDown exec hacklight -17 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec sudo hacklight 100 # increase screen brightness
+bindsym Shift+XF86MonBrightnessUp exec sudo hacklight 17  # increase screen brightness
+bindsym XF86MonBrightnessDown exec sudo hacklight -100 # decrease screen brightness
+bindsym Shift+XF86MonBrightnessDown exec sudo hacklight -17 # decrease screen brightness
